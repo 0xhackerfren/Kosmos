@@ -1,0 +1,5 @@
+{
+  "engine": {"seed": 3, "population": 4, "max_population": 16},
+  "world": {"id": "examples.battery.v1", "config": {"recharge": 1.0}},
+  "policy": "examples.battery-policy.v1"
+}
