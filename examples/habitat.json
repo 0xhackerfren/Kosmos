@@ -1,0 +1,31 @@
+{
+  "engine": {
+    "seed": 1,
+    "population": 12,
+    "max_population": 64,
+    "initial_energy": 12.0,
+    "metabolism": 0.4,
+    "max_age": 100,
+    "maturity_age": 3,
+    "offspring_energy": 4.0,
+    "birth_overhead": 2.0,
+    "reproduction": "clonal",
+    "mutation_rate": 0.1,
+    "mutation_scale": 0.1
+  },
+  "world": {
+    "id": "kosmos.habitat.v1",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "food_capacity": 4,
+      "regrowth_probability": 0.12,
+      "food_energy": 3.0,
+      "movement_cost": 0.1,
+      "message_cost": 0.05,
+      "message_radius": 2,
+      "max_message_bytes": 64
+    }
+  },
+  "policy": "kosmos.forager.v1"
+}
