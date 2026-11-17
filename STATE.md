@@ -19,9 +19,14 @@ Implemented source includes:
 
 ## Validation status
 
-Tests have been authored but not executed locally: the initialization session
-has no executor. GitHub Actions validation is the next gate. Consult the tests
-workflow on the exact implementation commit for its actual outcome.
+GitHub Actions passed all 26 tests on Python 3.11 and 3.12 for implementation
+commit `8f0fe62451a5b61001b11759d75f0fd0961c4582`.
+Both versions also passed compilation checks, habitat run/resume, and custom-world
+run/resume. See [the validation record](docs/VALIDATION.md) and
+[the successful workflow](https://github.com/0xhackerfren/Kosmos/actions/runs/43993859477).
+
+Validation ran remotely because this session has no local executor. These are
+technical correctness checks, not evidence supporting the thesis hypothesis.
 
 No pilot results or thesis findings were generated in this initialization.
 
@@ -39,11 +44,11 @@ unchanged core/world/policy source; checkpoint migrations are not yet implemente
 
 ## Next actions
 
-1. Run CI and fix failures before treating the foundation as validated.
-2. Follow docs/CHECKPOINT_RECOVERY.md when the earlier archive can be unpacked.
-3. Reconcile existing code and research artifacts without overwriting provenance.
-4. Establish a replicated, controlled first experiment.
-5. Add a read-only observer before attempting a Unity environment adapter.
+1. Follow docs/CHECKPOINT_RECOVERY.md when the earlier archive can be unpacked.
+2. Reconcile existing code and research artifacts without overwriting provenance.
+3. Establish a replicated, controlled first experiment.
+4. Add a read-only observer before attempting a Unity environment adapter.
+5. Add a local model runtime only after its state, budgets, and provenance are explicit.
 
 The current policies are scripted. LLM backends, cultural inheritance, graphical
 observation, Unity, and long-duration operating controls are not implemented.
